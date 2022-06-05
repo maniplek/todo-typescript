@@ -46,7 +46,7 @@ const App:FC = () =>{
         <button className='border-2 border-green-600 bg-green-500 text-white' onClick={addTask}>Add Task</button>
       </div>
       <div >
-        <h3 className='text-xl font-semibold text-green-500'>TODO LIST</h3>
+        <h3 className='flex justify-center text-xl font-semibold text-green-500'>TODO LIST</h3>
         {
           allTask.map((task: ITask, key:number)=>(
             <TodoList key={key} task={task} completedTask={completedTask} />
